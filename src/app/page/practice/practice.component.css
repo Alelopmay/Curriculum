@@ -1,0 +1,57 @@
+/* Sección de Experiencia */
+#experience {
+   
+    padding: 40px 0;
+    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Fondo coherente */
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), inset 0 1px 4px rgba(70, 252, 241, 0.1);
+    height: 100vh;
+}
+.background {   
+    background-color: #071322;
+    margin-top: -20px;
+}
+
+#experience h2 {
+    font-size: 2.4rem;
+    color: #66fcf1; /* Color verde neón */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    background: linear-gradient(145deg, #66fcf1, #45a29e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.experience-item {
+    padding: 20px;
+    border: 1px solid #0b0c10; /* Borde sutil */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para cada item */
+    color: #c5c6c7; /* Color de texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h3.company-name {
+    font-size: 1.8rem;
+    color: #66fcf1; /* Color verde neón para el nombre de la empresa */
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    color: #c5c6c7; /* Color de texto para los detalles */
+}
+
+.experience-item p.job-title {
+    font-weight: bold; /* Resaltar el título del trabajo */
+    color: #45a29e; /* Color diferente para el título del trabajo */
+}
+
+.experience-item p.job-dates {
+    font-style: italic; /* Italic para las fechas */
+    color: #aaa; /* Color más claro para las fechas */
+}

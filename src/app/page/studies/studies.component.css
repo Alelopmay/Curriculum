@@ -1,0 +1,53 @@
+/* Sección de Estudios */
+#studies {
+    padding: 40px; /* Espaciado interno */
+    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Fondo oscuro en gradiente */
+    color: #c5c6c7; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), inset 0 1px 4px rgba(70, 252, 241, 0.1); /* Sombra */
+    margin: 20px 0; /* Margen superior e inferior */
+    margin-top: -30px;
+    height: 100vh;
+}
+
+/* Título de la Sección */
+#studies h2 {
+    font-size: 2.4rem; /* Tamaño del encabezado */
+    color: #66fcf1; /* Color azul para el título */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Margen inferior */
+    position: relative;
+    background: linear-gradient(145deg, #66fcf1, #45a29e);
+    -webkit-background-clip: text; /* Clip para el fondo */
+    -webkit-text-fill-color: transparent; /* Relleno transparente para el texto */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Elemento de Estudio */
+.study-item {
+    background-color: #1f2833; /* Color de fondo oscuro para el elemento */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 15px 0; /* Margen superior e inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s; /* Transición suave al interactuar */
+}
+
+.study-item:hover {
+    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Título del Estudio */
+.study-item h3 {
+    font-size: 1.6rem; /* Tamaño del encabezado del estudio */
+    color: #66fcf1; /* Color azul para el título del estudio */
+    margin: 0; /* Sin margen */
+}
+
+/* Detalles del Estudio */
+.study-item p {
+    font-size: 1rem; /* Tamaño del texto de descripción */
+    color: #c5c6c7; /* Color gris claro para el texto */
+    margin: 8px 0; /* Margen vertical */
+}

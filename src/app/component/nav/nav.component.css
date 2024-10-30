@@ -1,0 +1,42 @@
+/* Cambiar el color de fondo de la navbar */
+.navbar {
+    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Color de fondo que coincide con el home */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para un efecto elevado */
+}
+
+/* Cambiar el color de los enlaces en la navbar */
+.navbar-nav .nav-link {
+    color: #66fcf1; /* Color verde neón */
+    font-weight: bold; /* Negrita para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 20px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse (hover) */
+.navbar-nav .nav-link:hover {
+    color: #45a29e; /* Color verde más oscuro para el hover */
+    text-shadow: 0px 0px 6px rgba(70, 252, 241, 0.8); /* Efecto de sombra en hover */
+}
+
+/* Cambiar el color del logotipo si es necesario */
+.navbar-brand img {
+    filter: brightness(0) invert(1); /* Invierte los colores del logo si es oscuro */
+}
+
+/* Alinear los elementos de la navbar a la derecha */
+.navbar-collapse {
+    justify-content: flex-end; /* Esto alinea los enlaces a la derecha */
+}
+
+/* Estilo para el botón de toggler (en pantallas pequeñas) */
+.navbar-toggler {
+    border-color: #66fcf1; /* Color del borde del botón toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #191a1b; /* Color del icono del toggler */
+}
+.nav-link i {
+    margin-right: 8px; /* Espaciado a la derecha del ícono */
+    font-size: 1.2rem; /* Tamaño del ícono */
+}

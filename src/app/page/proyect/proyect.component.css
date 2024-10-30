@@ -1,0 +1,183 @@
+/* Sección de Proyectos */
+#projects {
+    width: 100%; /* Asegura que la sección ocupe todo el ancho */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Fondo oscuro */
+    color: #c5c6c7; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen arriba y abajo */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-top: -1px;
+}
+
+#projects h2 {
+    font-size: 2.4rem; /* Tamaño del encabezado */
+    color: #66fcf1; /* Color azul para el título */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Margen inferior */
+    position: relative;
+    background: linear-gradient(145deg, #66fcf1, #45a29e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-item {
+    background-color: #1f2833; /* Color de fondo oscuro para el proyecto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    text-align: center; /* Centrar el contenido */
+}
+
+.project-item h3 {
+    font-size: 1.8rem; /* Tamaño del encabezado del proyecto */
+    color: #66fcf1; /* Color azul para el nombre del proyecto */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.project-content {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.project-video {
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo para mantener la legibilidad */
+    height: auto; /* Alto automático para mantener proporción */
+    margin: 20px 0; /* Espaciado vertical */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.project-content p {
+    font-size: 1.1rem; /* Tamaño del texto de descripción */
+    color: #c5c6c7; /* Color gris claro para el texto */
+    margin: 10px; /* Margen para el párrafo */
+}
+
+/* Media Queries para dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
+    #projects {
+        padding: 20px 0; /* Reducir padding en móviles */
+    }
+
+    .project-item {
+        padding: 15px; /* Reducir padding en móviles */
+    }
+
+    #projects h2 {
+        font-size: 1.8rem; /* Reducir tamaño del título en móviles */
+    }
+
+    .project-item h3 {
+        font-size: 1.4rem; /* Reducir tamaño del título del proyecto en móviles */
+    }
+
+    .project-content p {
+        font-size: 1rem; /* Reducir tamaño del texto en móviles */
+    }
+
+    .project-video {
+        max-width: 100%; /* Asegurar que el video ocupe todo el ancho en móviles */
+    }
+}
+
+/* Media Queries para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #projects {
+        padding: 40px 0; /* Ajustar padding en tabletas */
+    }
+
+    .project-item {
+        flex-direction: column; /* Mantener en columna en tabletas */
+        padding: 20px; /* Ajustar padding en tabletas */
+    }
+
+    #projects h2 {
+        font-size: 2.2rem; /* Ajustar tamaño del título en tabletas */
+    }
+
+    .project-item h3 {
+        font-size: 1.6rem; /* Ajustar tamaño del título del proyecto en tabletas */
+    }
+
+    .project-video {
+        max-width: 600px; /* Ajustar el ancho máximo del video en tabletas */
+    }
+}
+
+/* Media Queries para pantallas grandes (PC) */
+@media (min-width: 1025px) {
+    #projects {
+        padding: 60px 0; /* Aumentar padding en pantallas grandes */
+    }
+
+    .project-item {
+        flex-direction: row; /* Cambiar a fila para pantallas grandes */
+        justify-content: space-between; /* Separar contenido */
+        text-align: left; /* Alinear texto a la izquierda */
+    }
+
+    .project-content {
+        flex-direction: row; /* Cambiar a fila en pantallas grandes */
+        justify-content: center; /* Centrar contenido */
+        align-items: flex-start; /* Alinear al inicio */
+    }
+
+    .project-video {
+        max-width: 700px; /* Aumentar el ancho máximo en pantallas grandes */
+    }
+
+    .project-content p {
+        max-width: 600px; /* Limitar el ancho del texto en pantallas grandes */
+        margin-left: 20px; /* Añadir margen a la izquierda en texto */
+    }
+}
+/* Enlaces en la sección de proyectos */
+/* Enlaces en la sección de proyectos - ahora en bloque vertical */
+.project-item a {
+    display: block; /* Mostrar los enlaces en bloque, uno debajo del otro */
+    background-color: #45a29e; /* Color de fondo del enlace */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior para separar enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-align: center; /* Centrar el texto dentro del enlace */
+}
+
+/* Hover para enlaces */
+.project-item a:hover {
+    background-color: #66fcf1; /* Cambiar el color de fondo al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Aumentar la sombra al pasar el cursor */
+}
+
+/* Enlaces en dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
+    .project-content a {
+        width: 100%; /* Ocupa todo el ancho disponible en móviles */
+        margin: 10px 0; /* Separar enlaces en móviles */
+    }
+}
+
+/* Enlaces en tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .project-content a {
+        width: 100%; /* Ocupa todo el ancho en tabletas */
+        margin: 10px 0; /* Margen superior e inferior para separación */
+    }
+}
+
+/* Enlaces en pantallas grandes (PC) */
+@media (min-width: 1025px) {
+    .project-content a {
+        width: 100%; /* Los enlaces ocupan todo el ancho debajo del texto */
+        margin: 10px 0; /* Espaciado para separar enlaces */
+    }
+}
