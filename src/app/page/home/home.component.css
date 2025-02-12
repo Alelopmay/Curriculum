@@ -238,3 +238,35 @@ footer p {
     color: #ffffff;
     text-align: center;
 }
+.alert {
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.alert .close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  color: inherit;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
