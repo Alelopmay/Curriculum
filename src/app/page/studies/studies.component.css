@@ -1,53 +1,80 @@
 /* Sección de Estudios */
 #studies {
-    padding: 40px; /* Espaciado interno */
-    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Fondo oscuro en gradiente */
-    color: #c5c6c7; /* Color del texto */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), inset 0 1px 4px rgba(70, 252, 241, 0.1); /* Sombra */
-    margin: 20px 0; /* Margen superior e inferior */
-    margin-top: -30px;
+    background-color: #2c3e50; /* Fondo oscuro */
+    padding: 4rem 2rem;
+    animation: fadeInUp 1.5s ease-out;
     height: 100vh;
+    color: #ecf0f1; /* Color de texto claro */
+    border-radius: 16px;
 }
 
 /* Título de la Sección */
 #studies h2 {
-    font-size: 2.4rem; /* Tamaño del encabezado */
-    color: #66fcf1; /* Color azul para el título */
-    text-align: center; /* Centrar el título */
-    margin-bottom: 20px; /* Margen inferior */
-    position: relative;
-    background: linear-gradient(145deg, #66fcf1, #45a29e);
-    -webkit-background-clip: text; /* Clip para el fondo */
-    -webkit-text-fill-color: transparent; /* Relleno transparente para el texto */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    text-align: center;
+    color: #16a085; /* Color verde brillante */
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #16a085;
+    display: inline-block;
+    padding-bottom: 0.5rem;
 }
 
 /* Elemento de Estudio */
 .study-item {
-    background-color: #1f2833; /* Color de fondo oscuro para el elemento */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    margin: 15px 0; /* Margen superior e inferior */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.3s; /* Transición suave al interactuar */
+    background: rgba(255, 255, 255, 0.04); /* Fondo translúcido oscuro */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Borde suave */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    border-radius: 20px;
+    padding: 1.8rem;
+    color: #ecf0f1; /* Color de texto en los elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Efecto hover en los elementos de estudio */
 .study-item:hover {
-    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el ratón */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el ratón */
+    transform: translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo más brillante al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(22, 160, 133, 0.3); /* Sombra verde */
 }
 
 /* Título del Estudio */
 .study-item h3 {
-    font-size: 1.6rem; /* Tamaño del encabezado del estudio */
-    color: #66fcf1; /* Color azul para el título del estudio */
-    margin: 0; /* Sin margen */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1abc9c; /* Título en verde brillante */
+    margin-bottom: 1rem;
 }
 
 /* Detalles del Estudio */
 .study-item p {
-    font-size: 1rem; /* Tamaño del texto de descripción */
-    color: #c5c6c7; /* Color gris claro para el texto */
-    margin: 8px 0; /* Margen vertical */
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8); /* Color del texto de detalles */
+}
+
+/* Animación de entrada para los elementos */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Asegurar la disposición en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    #studies {
+        padding: 2rem 1rem;
+    }
+
+    .study-item {
+        padding: 1.5rem;
+    }
 }

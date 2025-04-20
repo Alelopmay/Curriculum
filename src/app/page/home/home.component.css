@@ -1,272 +1,293 @@
-/* Reset y Configuración Global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.background {
-
-  background-color: #071322;
+/* Paleta de colores modificada para no cambiar demasiado */
+.bg-main {
+    background-color: #2c3e50; /* Gris oscuro para fondo principal */
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #000000; /* Fondo oscuro estilo gaming */
-  color: #ffffff;
-  margin-bottom: 10000000px;
+.bg-header {
+    background-color: #34495e; /* Gris intermedio para el encabezado */
 }
 
-.container {
-  width: 85%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 25px;
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7); /* Color más suave para textos secundarios */
 }
 
-/* Encabezado */
-header {
-  background: linear-gradient(145deg, #1f2833, #0b0c10);
-  color: #66fcf1; /* Color verde neón */
-  padding: 40px 0;
-  text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+.text-accent {
+    color: #16a085; /* Verde moderado para acentos */
 }
 
-/* Contenido del Encabezado */
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
+.link-accent {
+    color: #1abc9c;
+    text-decoration: none;
 }
 
-/* Foto de Perfil */
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #45a29e, #1f2833);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.3);
-  margin-bottom: 15px;
+.link-accent:hover {
+    color: #16a085;
+    text-decoration: underline;
 }
 
+/* Animaciones */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mejora en la visibilidad de los títulos */
+h1 {
+    font-size: 3rem; /* Aumentamos el tamaño de los títulos principales */
+    font-weight: 700;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease-out; /* Animación suave de entrada */
+}
+
+h2.h5 {
+    font-size: 1.8rem; /* Aumentamos el tamaño de los subtítulos */
+    font-weight: 600;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-out; /* Animación suave de entrada */
+}
+
+/* Estilo para los párrafos */
+p, li {
+    font-size: 1.1rem; /* Tamaño de texto adecuado para lectura */
+    line-height: 1.6; /* Mayor espacio entre líneas para mayor legibilidad */
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 2s ease-out; /* Animación suave de entrada */
+}
+
+/* Tamaño de las imágenes */
 .profile-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%; /* Las imágenes se adaptan al contenedor */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Foto redonda */
+    animation: fadeInUp 2s ease-out; /* Animación de entrada para la foto */
 }
 
-/* Texto en el Encabezado */
-.header-text h1 {
-  font-size: 2.8rem;
-  color: #66fcf1;
-  background: linear-gradient(145deg, #66fcf1, #45a29e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+/* Badges (etiquetas) */
+.badge {
+    padding: 0.5em 1em;
+    font-size: 1rem; /* Aumentamos el tamaño de las etiquetas */
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #1abc9c;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición en hover */
 }
 
-.header-text p {
-  color: #ffffff;
-  font-size: 1.3rem;
-  text-align: center;
+/* Hover en badges */
+.badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Navegación */
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 10px;
+/* Mejorar la visibilidad de los enlaces */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave para color */
 }
 
-header nav ul li {
-  margin: 0 15px;
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
 }
 
-header nav ul li a {
-  color: #66fcf1;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-header nav ul li a:hover {
-  color: #45a29e;
-  text-shadow: 0px 0px 6px rgba(70, 252, 241, 0.8);
-}
-
-/* Secciones */
+/* Efecto para secciones */
 section {
-  padding: 40px 0;
-  background: linear-gradient(145deg, #1f2833, #0b0c10);
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), inset 0 1px 4px rgba(70, 252, 241, 0.1);
+    padding: 2rem 0; /* Espacio adicional para separar las secciones */
+    animation: fadeInUp 1.5s ease-out; /* Animación de entrada suave */
 }
 
-section h2 {
-  font-size: 2.4rem;
-  color: #66fcf1;
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-  background: linear-gradient(145deg, #66fcf1, #45a29e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+/* Estilo de la lista */
+ul.list-unstyled li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    animation: fadeInUp 2.5s ease-out; /* Animación para los elementos de la lista */
 }
 
-section h2::after {
-  content: "";
-  width: 80px;
-  height: 5px;
-  background-color: #66fcf1;
-  display: block;
-  margin: 8px auto 0;
-  border-radius: 10px;
-}
-
-ul.personal-info-list {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #ffffff;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.personal-info-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid #0b0c10;
-  color: #ffffff;
-}
-
-.personal-info-list li strong {
-  font-weight: bold;
-  color: #66fcf1;
-}
-
-.personal-info-list a {
-  color: #66fcf1;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.personal-info-list a:hover {
-  color: #45a29e;
-  text-shadow: 0px 0px 6px rgba(70, 252, 241, 0.8);
-}
-
-/* Hobbies */
-#hobbies {
-  text-align: center;
-}
-
-#hobbies p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-/* Pie de Página */
+/* Footer */
 footer {
-  background: linear-gradient(145deg, #1f2833, #0b0c10);
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 0;
-  margin-top: 30px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    animation: fadeInUp 3s ease-out; /* Animación suave para el footer */
 }
 
-footer p {
-  margin: 0;
-  font-size: 1rem;
+footer small {
+    font-size: 1rem;
+    color: #95a5a6;
 }
 
-/* Media Queries */
-@media (min-width: 768px) {
-  .header-content {
-    flex-direction: row;
-  }
-
-  .profile-photo {
-    width: 160px;
-    height: 160px;
-  }
-
-  header nav ul {
-    margin-top: 15px;
-  }
-
-  .header-text h1 {
-    font-size: 3.2rem;
-  }
+/* Ajustes de margen */
+.container {
+    margin-top: 50px;
 }
 
+/* Decoración sutil para los bordes */
+.border-info {
+    border-color: #16a085 !important;
+}
+
+/* Sombra suave para secciones */
+.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Efecto de hover para las secciones */
+section:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* ----- Media Queries para dispositivos pequeños ----- */
+
+/* Mobile - Portrait */
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2.3rem; /* Título más pequeño en móviles */
+    }
+
+    h2.h5 {
+        font-size: 1.5rem; /* Subtítulos más pequeños */
+    }
+
+    p, li {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    /* Foto redonda y centrada */
+    .profile-photo img {
+        width: 120px; /* Foto más pequeña */
+        height: 120px; /* Foto más pequeña */
+    }
+
+    /* Ajustar márgenes y padding */
+    .container {
+        margin-top: 20px;
+        padding: 0 1rem; /* Padding reducido para móviles */
+    }
+
+    /* Ajustes en el header */
+    .bg-header {
+        padding: 3rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem 0; /* Menos espacio vertical */
+    }
+
+    /* Los links dentro de los badges se hacen más compactos */
+    .badge {
+        font-size: 0.9rem;
+        padding: 0.4em 0.8em;
+    }
+
+    /* Asegurar que el header no esté demasiado grande */
+    header {
+        padding: 3rem 1rem;
+    }
+
+    .text-center {
+        text-align: left; /* Para que la información no quede centrada en móviles */
+    }
+}
+
+/* Mobile - Landscape */
+@media (min-width: 576px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.6rem; /* Título ligeramente más pequeño en tabletas */
+    }
+
+    h2.h5 {
+        font-size: 1.6rem; /* Subtítulos más pequeños */
+    }
+
+    p, li {
+        font-size: 1.05rem; /* Texto un poco más pequeño */
+    }
+
+    .profile-photo img {
+        width: 130px; /* Foto más pequeña en paisaje */
+        height: 130px; /* Foto más pequeña en paisaje */
+    }
+
+    section {
+        padding: 1.8rem 0; /* Ajuste de espacio */
+    }
+
+    .container {
+        margin-top: 40px; /* Menos margen superior en móvil */
+    }
+
+    .bg-header {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Tablet y escritorios más pequeños */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.9rem; /* Título más grande en tabletas y escritorios pequeños */
+    }
+
+    h2.h5 {
+        font-size: 1.7rem; /* Subtítulos más grandes */
+    }
+
+    p, li {
+        font-size: 1.1rem; /* Texto más legible */
+    }
+
+    /* Foto redonda ajustada */
+    .profile-photo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    section {
+        padding: 2rem; /* Espaciado adicional */
+    }
+
+    .container {
+        margin-top: 50px; /* Ajuste de márgenes */
+    }
+}
+
+/* Para escritorios grandes */
 @media (min-width: 1024px) {
-  .profile-photo {
-    width: 180px;
-    height: 180px;
-  }
+    h1 {
+        font-size: 3.5rem; /* Título más grande */
+    }
 
-  .header-text h1 {
-    font-size: 3.6rem;
-  }
-}
-#personal-profile {
-    padding: 20px 0;
-    background-color: #f3f3f3; /* Cambia el color de fondo si es necesario */
-}
+    h2.h5 {
+        font-size: 1.8rem; /* Subtítulos con tamaño máximo */
+    }
 
-#personal-profile h2 {
-    font-size: 2rem;
-    color: #45a29e;
-    text-align: center;
-    margin-bottom: 10px;
-}
+    p, li {
+        font-size: 1.15rem; /* Texto más grande */
+    }
 
-#personal-profile p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    text-align: center;
-}
-.alert {
-  margin: 15px 0;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 16px;
-}
+    .profile-photo img {
+        width: 150px; /* Foto más grande */
+        height: 150px; /* Foto más grande */
+    }
 
-.alert-success {
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  color: #155724;
-}
+    section {
+        padding: 3rem; /* Más espacio en secciones */
+    }
 
-.alert-danger {
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-  color: #721c24;
-}
-
-.alert .close-btn {
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  float: right;
-  color: inherit;
-}
-
-button[disabled] {
-  background-color: #ccc;
-  cursor: not-allowed;
+    .container {
+        margin-top: 60px; /* Ajuste de márgenes */
+    }
 }

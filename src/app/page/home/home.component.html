@@ -1,60 +1,76 @@
-<div class="background">
-    <header>
-        <div class="container header-content">
-            <div class="profile-photo">
-                <img src="assets/photo/foto.jpeg" alt="Foto de Alejandro López Maya" />
+<div class="min-vh-100 d-flex flex-column bg-main text-light">
+    <!-- HEADER -->
+    <header class="bg-header py-5 shadow">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <!-- INFO -->
+            <div class="text-center text-md-start mb-4 mb-md-0">
+                <h1 class="display-5 fw-bold text-accent">Alejandro López Maya</h1>
+                <p class="lead text-light">
+                    Técnico en Sistemas Informáticos <br />
+                    Desarrollador de Aplicaciones Multiplataforma
+                </p>
+                <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                    <span class="badge bg-accent">Angular</span>
+                    <span class="badge bg-success">Spring Boot</span>
+                    <span class="badge bg-info text-dark">React</span>
+                    <span class="badge bg-danger">Laravel</span>
+                </div>
             </div>
-            <div class="header-text">
-                <h1>Alejandro López Maya</h1>
-                <p> Técnico en sistemas informáticos y desarrollador de aplicaciones multiplataforma, Especializado en Angular y spring boot</p>
+
+            <!-- FOTO -->
+            <div class="border border-3 border-info rounded-circle overflow-hidden shadow"
+                style="width: 150px; height: 150px;">
+                <img src="assets/photo/foto.jpeg" alt="Foto de Alejandro López Maya" class="img-fluid w-100 h-100" />
             </div>
         </div>
     </header>
 
-    <section id="personal-info">
-        <div class="container">
-            <h2>Datos Personales</h2>
-            <ul class="personal-info-list">
-                <li><strong>Nombre:</strong> Alejandro López Maya</li>
-                <li>Email: <a href="mailto:alelopmay&#64;gmail.com">alelopmay&#64;gmail.com</a></li>
-                <li><strong>Teléfono:</strong> 644898740</li>
-                <li>
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/alejandro-lopez-maya-39a7b5263" target="_blank">Mi LinkedIn</a>
-                </li>
-                <li><strong>Permiso de Conducir:</strong> B</li>
-            </ul>
-        </div>
-    </section>
+    <!-- MAIN -->
+    <main class="container py-5">
+        <div class="row g-5">
+            <!-- DATOS PERSONALES -->
+            <section class="col-md-6">
+                <h2 class="h5 text-accent border-bottom pb-2 mb-3">Datos Personales</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Nombre:</strong> Alejandro López Maya</li>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:alelopmay&#64;gmail.com" class="link-accent">alelopmay&#64;gmail.com</a>
+                    </li>
+                    <li><strong>Teléfono:</strong> 644 89 87 40</li>
+                    <li>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/alejandro-lopez-maya-39a7b5263" target="_blank"
+                            class="link-accent">Visitar perfil</a>
+                    </li>
+                    <li><strong>Permiso de Conducir:</strong> B</li>
+                </ul>
+            </section>
 
-    <!-- Nueva sección de perfil personal -->
-    <section id="personal-profile">
-        <div class="container">
-            <h2>Perfil Personal</h2>
-            <p>
-                Soy una persona centrada, organizada y con capacidad de adaptación para enfrentar diversas situaciones.
-                Trabajo bien en equipo, tengo capacidad de liderazgo y me esfuerzo por aportar positivamente en todos
-                los
-                proyectos en los que participo.
-            </p>
-        </div>
-    </section>
+            <!-- PERFIL Y AFICIONES -->
+            <section class="col-md-6">
+                <h2 class="h5 text-accent border-bottom pb-2 mb-3">Perfil Profesional</h2>
+                <p class="text-light">
+                    Persona enfocada, organizada y adaptable, con habilidades para trabajar en equipo y liderar
+                    proyectos. Me esfuerzo por aportar soluciones prácticas y eficientes en cada entorno profesional.
+                </p>
 
-    <section id="hobbies">
-        <div class="container">
-            <h2>Aficiones</h2>
-            <p>
-                Disfruto de aprender sobre nuevas tecnologías, el desarrollo de software y el trabajo en proyectos
-                colaborativos. También me interesa la lectura sobre ciencia y tecnología, así como actividades al aire
-                libre.
-            </p>
+                <h2 class="h5 text-accent border-bottom pb-2 mt-4 mb-3">Aficiones</h2>
+                <p class="text-light">
+                    Apasionado por las nuevas tecnologías, el desarrollo de software, la colaboración en proyectos y el
+                    aprendizaje continuo. Interés en lectura tecnológica y actividades al aire libre.
+                </p>
+            </section>
         </div>
-    </section>
 
-    <footer>
+        <!-- FORMULARIO DE CONTACTO -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-header text-light text-center py-3 mt-auto">
         <div class="container">
-            <p>&copy; 2024 Alejandro López Maya. Todos los derechos reservados.</p>
+            <small class="text-light">&copy; 2024 Alejandro López Maya · Todos los derechos reservados</small>
         </div>
     </footer>
 </div>
-

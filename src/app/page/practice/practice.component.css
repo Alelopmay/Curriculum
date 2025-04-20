@@ -1,57 +1,145 @@
-/* Sección de Experiencia */
-#experience {
-   
-    padding: 40px 0;
-    background: linear-gradient(145deg, #1f2833, #0b0c10); /* Fondo coherente */
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), inset 0 1px 4px rgba(70, 252, 241, 0.1);
-    height: 100vh;
-}
-.background {   
-    background-color: #071322;
-    margin-top: -20px;
+/* Paleta de colores modificada para no cambiar demasiado */
+.bg-main {
+    background-color: #2c3e50; /* Gris oscuro para fondo principal */
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#experience h2 {
-    font-size: 2.4rem;
-    color: #66fcf1; /* Color verde neón */
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    background: linear-gradient(145deg, #66fcf1, #45a29e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+.text-accent {
+    color: #16a085; /* Verde moderado para acentos */
 }
 
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7); /* Color más suave para textos secundarios */
+}
+
+.section-header {
+    margin-bottom: 2rem;
+    color: #16a085; /* Verde para el encabezado */
+    font-size: 1.8rem; /* Tamaño de texto para los títulos */
+    font-weight: 600;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-out; /* Animación suave de entrada */
+}
+
+.border-accent {
+    border-color: #16a085 !important; /* Verde acentuado */
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para los párrafos */
+p, li {
+    font-size: 1.1rem; /* Tamaño de texto adecuado para lectura */
+    line-height: 1.6; /* Mayor espacio entre líneas para mayor legibilidad */
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 2s ease-out; /* Animación suave de entrada */
+}
+
+/* Estilo para las tarjetas de experiencia */
 .experience-item {
-    padding: 20px;
-    border: 1px solid #0b0c10; /* Borde sutil */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para cada item */
-    color: #c5c6c7; /* Color de texto */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.04); /* Fondo ligeramente opaco */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px); /* Desenfoque de fondo */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
 }
 
-.experience-item h3.company-name {
-    font-size: 1.8rem;
-    color: #66fcf1; /* Color verde neón para el nombre de la empresa */
-    margin-bottom: 5px;
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(22, 160, 133, 0.3); /* Sombra con el color acento */
 }
 
-.experience-item p {
-    margin: 5px 0;
-    color: #c5c6c7; /* Color de texto para los detalles */
+/* Mejorar visibilidad de los títulos en las tarjetas */
+h3 {
+    font-size: 1.5rem; /* Tamaño adecuado para los subtítulos */
+    font-weight: 700;
 }
 
-.experience-item p.job-title {
-    font-weight: bold; /* Resaltar el título del trabajo */
-    color: #45a29e; /* Color diferente para el título del trabajo */
+/* Mejora en los enlaces */
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave en los enlaces */
 }
 
-.experience-item p.job-dates {
-    font-style: italic; /* Italic para las fechas */
-    color: #aaa; /* Color más claro para las fechas */
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Animaciones de entrada para las secciones */
+section {
+    padding: 2rem 0; /* Espacio adicional para separar las secciones */
+    animation: fadeInUp 1.5s ease-out; /* Animación suave de entrada */
+}
+
+/* Estilo para la lista de experiencia */
+ul.list-unstyled li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    animation: fadeInUp 2.5s ease-out; /* Animación para los elementos de la lista */
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Gris intermedio */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    animation: fadeInUp 3s ease-out; /* Animación suave para el footer */
+}
+
+footer small {
+    font-size: 1rem;
+    color: #95a5a6;
+}
+
+/* Ajustes de margen */
+.container {
+    margin-top: 50px;
+}
+
+/* Decoración sutil para los bordes */
+.border-info {
+    border-color: #16a085 !important;
+}
+
+/* Sombra suave para secciones */
+.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Efecto de hover para las secciones */
+section:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }

@@ -1,105 +1,99 @@
 <section id="projects">
     <div class="container">
-        <h2>Proyectos</h2>
+        <h2><i class="fas fa-laptop-code"></i> Proyectos</h2>
 
-        <!-- Protaller Project -->
-        <div class="project-item">
-            <h3>Protaller</h3>
-            <div class="project-content">
-                <p>Protaller es una aplicación diseñada para la gestión integral de talleres mecánicos. Permite a los
-                    talleres mantener un registro organizado de clientes y vehículos, generando formularios y facturas
-                    de manera eficiente. Además, la app incluye funcionalidades para asignar tareas a los trabajadores,
-                    registrar horas de trabajo en los vehículos y facilitar la ubicación de talleres mediante rastreo
-                    GPS, brindando a los clientes acceso a un registro detallado de los servicios realizados en sus
-                    vehículos. Protaller está desarrollado en Angular y utiliza una base de datos en Spring Boot.</p>
-            </div>
-            <div class="project-links">
-                <a href="https://drive.google.com/file/d/1k2yPTV7oz8OscxjUHwHCTJ66Cc2FKh--/view?usp=sharing" class="project-video-link">Video del proyecto</a>
-                <a href="https://github.com/Alelopmay/Protaller" class="project-github">GitHub de el frontend</a>
-                <a href="https://github.com/Alelopmay/protallerback" class="project-github">GitHub de el backend</a>
-            </div>
-        </div>
-
-        <!-- TutorialHub Project -->
-        <div class="project-item">
-            <h3>TutorialHub</h3>
-            <div class="project-content">
-                <p>TutorialHub es una plataforma para la gestión de clases particulares, donde los profesores pueden
-                    publicar y organizar clases con ubicación GPS. Los estudiantes pueden explorar clases por categoría
-                    y proximidad, enviar solicitudes de inscripción y valorar a los profesores. Los docentes pueden
-                    asignar tareas y actividades específicas, que los estudiantes pueden completar y visualizar en su
-                    perfil. Esta app, desarrollada en Angular y Spring Boot, organiza toda la información de las clases,
-                    facilitando una experiencia de aprendizaje flexible y accesible.</p>
-            </div>
-            <div class="project-links">
-                <a href="https://drive.google.com/file/d/1yC5KsmyWCg1Wc6vE8AdvMeNDkD2UXA6C/view?usp=drive_link"
-                    class="project-video-link">Video del proyecto</a>
-                <a href="https://github.com/Alelopmay/tutorialHub2" class="project-github">GitHub de el frontend</a>
-                <a href="https://github.com/JoseJavier1801/TutorialHub" class="project-github">GitHub de el backend</a>
-            </div>
-        </div>
-
-        <!-- SwimTrack Project -->
-        <div class="project-item">
-            <h3>SwimTrack</h3>
-            <div class="project-content">
-                <p>SwimTrack es una aplicación para monitores de natación, diseñada para gestionar el rendimiento de los
-                    nadadores. Los monitores pueden crear y gestionar perfiles de nadadores, registrar resultados de
-                    pruebas de competición y hacer un seguimiento de la evolución en el rendimiento de cada deportista.
-                    También permite organizar entrenamientos y competiciones, y cuenta con una agenda para planificar
-                    eventos. SwimTrack está desarrollada en Ionic y utiliza Spring Boot para su base de datos.</p>
-            </div>
-            <div class="project-links">
-                <a href="https://drive.google.com/file/d/1xpVmRtfpivB1FaXuRjK5JbVuaRJIkp0Z/view?usp=drive_link" class="project-video-link">Video del proyecto</a>
-            </div>
-        </div>
-
-        <!-- Spotyfy Project -->
-        <div class="project-item">
-            <h3>Spotyfy</h3>
-            <div class="project-content">
-                <p>Spotyfy es una aplicación educativa para practicar tecnologías de reproducción musical y bases de
-                    datos. Este proyecto permite la implementación de funcionalidades básicas de streaming de música y
-                    el aprendizaje en gestión de datos multimedia. La aplicación fue desarrollada en Java y FXML como
-                    parte de una práctica avanzada de desarrollo de software.</p>
+        <div class="project-grid">
+            <!-- Protaller Project -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>Protaller</h3>
+                <div class="project-content">
+                    <p>Protaller es una aplicación diseñada para la gestión integral de talleres mecánicos, incluyendo
+                        control de inventarios, programación de citas, gestión de clientes y generación de reportes en
+                        tiempo real.</p>
+                </div>
                 <div class="project-links">
-                    <a href="https://github.com/rafa30052003/proyectoSpoty" class="project-github">GitHub del
-                        proyecto</a>
+                    <a
+                        href="https://drive.google.com/file/d/1k2yPTV7oz8OscxjUHwHCTJ66Cc2FKh--/view?usp=sharing">Video</a>
+                    <a href="https://github.com/Alelopmay/Protaller">Frontend</a>
+                    <a href="https://github.com/Alelopmay/protallerback">Backend</a>
+                </div>
+            </div>
+
+            <!-- TutorialHub -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>TutorialHub</h3>
+                <div class="project-content">
+                    <p>TutorialHub es una plataforma educativa que permite a estudiantes encontrar y contactar
+                        profesores particulares. Incluye programación de clases, pagos y seguimiento de progreso
+                        académico.</p>
+                </div>
+                <div class="project-links">
+                    <a
+                        href="https://drive.google.com/file/d/1yC5KsmyWCg1Wc6vE8AdvMeNDkD2UXA6C/view?usp=drive_link">Video</a>
+                    <a href="https://github.com/Alelopmay/tutorialHub2">Frontend</a>
+                    <a href="https://github.com/JoseJavier1801/TutorialHub">Backend</a>
+                </div>
+            </div>
+
+            <!-- SwimTrack -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>SwimTrack</h3>
+                <div class="project-content">
+                    <p>SwimTrack es una aplicación para monitores de natación que permite registrar sesiones de
+                        entrenamiento, controlar el progreso de nadadores y generar estadísticas de rendimiento a lo
+                        largo del tiempo.</p>
+                </div>
+                <div class="project-links">
+                    <a
+                        href="https://drive.google.com/file/d/1xpVmRtfpivB1FaXuRjK5JbVuaRJIkp0Z/view?usp=drive_link">Video</a>
+                </div>
+            </div>
+
+            <!-- Spotyfy -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>Spotyfy</h3>
+                <div class="project-content">
+                    <p>Spotyfy es una aplicación educativa diseñada para explorar las funcionalidades de reproducción
+                        musical, integrando búsqueda de canciones, listas personalizadas y control de audio en tiempo
+                        real.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/rafa30052003/proyectoSpoty">GitHub</a>
+                </div>
+            </div>
+
+            <!-- ClínicaPro -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>ClínicaPro</h3>
+                <div class="project-content">
+                    <p>ClínicaPro es una innovadora plataforma para clínicas de fisioterapia, que ofrece agendamiento
+                        inteligente de citas, historial clínico digital, reportes terapéuticos y comunicación con los
+                        pacientes.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Alelopmay/clinicay">Frontend</a>
+                    <a href="https://github.com/Alelopmay/clinicBack">Backend</a>
+                </div>
+            </div>
+
+            <!-- EquipFix -->
+            <div class="project-item" onclick="toggleDetails(this)">
+                <h3>EquipFix</h3>
+                <div class="project-content">
+                    <p>EquipFix es una solución empresarial desarrollada en React y Spring Boot para la gestión del
+                        mantenimiento de equipos industriales. Permite registrar fallas, asignar técnicos y realizar
+                        seguimiento al estado de reparación.</p>
+                </div>
+                <div class="project-links">
+                    <a href="#">Repositorio privado</a>
                 </div>
             </div>
         </div>
-        <!-- ClínicaPro Project -->
-        <div class="project-item">
-            <h3>ClínicaPro</h3>
-            <div class="project-content">
-                <p>ClínicaPro es una innovadora aplicación diseñada para optimizar la gestión integral de clínicas de
-                    fisioterapia. Esta herramienta permite a las empresas administrar de forma eficiente clientes, empleados y
-                    citas médicas, asegurando un flujo de trabajo organizado y sin contratiempos. ClínicaPro también facilita el
-                    manejo de datos esenciales para el día a día de la clínica, desde la programación de sesiones hasta el
-                    seguimiento de tratamientos, ofreciendo una experiencia fluida tanto para el personal como para los
-                    pacientes. Desarrollada con tecnologías modernas, su interfaz intuitiva y robusta garantiza un control
-                    administrativo avanzado. El proyecto fue desarrollado en Angular para el frontend y Spring Boot para el backend.</p>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/Alelopmay/clinicay" class="project-github">GitHub del frontend</a>
-                <a href="https://github.com/Alelopmay/clinicBack" class="project-github">GitHub del backend</a>
-            </div>
-        </div>
-        <!-- ClínicaPro Project -->
-        <div class="project-item">
-            <h3>EquipFix</h3>
-            <div class="project-content">
-                <p>EquipFix es una aplicación desarrollada en React con una base de datos en Spring Boot, diseñada para gestionar el
-                mantenimiento de equipos informáticos, industriales y eléctricos. Permite llevar un registro detallado de los equipos,
-                generar informes y gestionar su ubicación para facilitar las revisiones. Su objetivo es optimizar el seguimiento del
-                mantenimiento en las empresas, asegurando que los trabajadores estén siempre informados sobre el estado y la
-                localización de los equipos.</p>
-            </div>
-            <div class="project-links">
-               
-            </div>
-        </div>
-
-
     </div>
 </section>
+
+<script>
+    function toggleDetails(card) {
+        card.classList.toggle("expanded");
+    }
+</script>
