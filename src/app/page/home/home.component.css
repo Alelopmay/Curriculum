@@ -1,18 +1,18 @@
-/* Paleta de colores modificada para no cambiar demasiado */
+/* Paleta de colores */
 .bg-main {
-    background-color: #2c3e50; /* Gris oscuro para fondo principal */
+    background-color: #2c3e50;
 }
 
 .bg-header {
-    background-color: #34495e; /* Gris intermedio para el encabezado */
+    background-color: #34495e;
 }
 
 .text-light-50 {
-    color: rgba(255, 255, 255, 0.7); /* Color más suave para textos secundarios */
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .text-accent {
-    color: #16a085; /* Verde moderado para acentos */
+    color: #16a085;
 }
 
 .link-accent {
@@ -37,62 +37,61 @@
     }
 }
 
-/* Mejora en la visibilidad de los títulos */
+/* Títulos */
 h1 {
-    font-size: 3rem; /* Aumentamos el tamaño de los títulos principales */
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-    animation: fadeInUp 1s ease-out; /* Animación suave de entrada */
+    animation: fadeInUp 1s ease-out;
 }
 
 h2.h5 {
-    font-size: 1.8rem; /* Aumentamos el tamaño de los subtítulos */
+    font-size: 1.8rem;
     font-weight: 600;
     border-bottom: 2px solid #16a085;
     padding-bottom: 8px;
     margin-bottom: 15px;
-    animation: fadeInUp 1.5s ease-out; /* Animación suave de entrada */
+    animation: fadeInUp 1.5s ease-out;
 }
 
-/* Estilo para los párrafos */
+/* Texto */
 p, li {
-    font-size: 1.1rem; /* Tamaño de texto adecuado para lectura */
-    line-height: 1.6; /* Mayor espacio entre líneas para mayor legibilidad */
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
-    animation: fadeInUp 2s ease-out; /* Animación suave de entrada */
+    animation: fadeInUp 2s ease-out;
 }
 
-/* Tamaño de las imágenes */
+/* Imágenes de perfil */
 .profile-photo img {
-    width: 100%; /* Las imágenes se adaptan al contenedor */
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%; /* Foto redonda */
-    animation: fadeInUp 2s ease-out; /* Animación de entrada para la foto */
+    border-radius: 50%;
+    animation: fadeInUp 2s ease-out;
 }
 
-/* Badges (etiquetas) */
+/* Badges */
 .badge {
     padding: 0.5em 1em;
-    font-size: 1rem; /* Aumentamos el tamaño de las etiquetas */
+    font-size: 1rem;
     border-radius: 20px;
     font-weight: 600;
     background-color: #1abc9c;
     color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición en hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover en badges */
 .badge:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Mejorar la visibilidad de los enlaces */
+/* Enlaces */
 a {
     color: #1abc9c;
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición suave para color */
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -100,18 +99,17 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Efecto para secciones */
+/* Secciones */
 section {
-    padding: 2rem 0; /* Espacio adicional para separar las secciones */
-    animation: fadeInUp 1.5s ease-out; /* Animación de entrada suave */
+    padding: 2rem 0;
+    animation: fadeInUp 1.5s ease-out;
 }
 
-/* Estilo de la lista */
 ul.list-unstyled li {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
-    animation: fadeInUp 2.5s ease-out; /* Animación para los elementos de la lista */
+    animation: fadeInUp 2.5s ease-out;
 }
 
 /* Footer */
@@ -120,7 +118,7 @@ footer {
     color: #ecf0f1;
     text-align: center;
     padding: 1.5rem 0;
-    animation: fadeInUp 3s ease-out; /* Animación suave para el footer */
+    animation: fadeInUp 3s ease-out;
 }
 
 footer small {
@@ -128,106 +126,119 @@ footer small {
     color: #95a5a6;
 }
 
-/* Ajustes de margen */
+/* Margen contenedor */
 .container {
     margin-top: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-/* Decoración sutil para los bordes */
+/* Bordes decorativos */
 .border-info {
     border-color: #16a085 !important;
 }
 
-/* Sombra suave para secciones */
+/* Sombras */
 .shadow-sm {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Efecto de hover para las secciones */
+/* Hover en secciones */
 section:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* ----- Media Queries para dispositivos pequeños ----- */
+/* Prevención de desbordes generales */
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* === Media Queries Responsivas === */
 
 /* Mobile - Portrait */
 @media (max-width: 575px) {
     h1 {
-        font-size: 2.3rem; /* Título más pequeño en móviles */
+        font-size: 2.3rem;
     }
 
     h2.h5 {
-        font-size: 1.5rem; /* Subtítulos más pequeños */
+        font-size: 1.5rem;
     }
 
     p, li {
-        font-size: 1rem; /* Texto más pequeño */
+        font-size: 1rem;
     }
 
-    /* Foto redonda y centrada */
     .profile-photo img {
-        width: 120px; /* Foto más pequeña */
-        height: 120px; /* Foto más pequeña */
+        width: 120px;
+        height: 120px;
     }
 
-    /* Ajustar márgenes y padding */
     .container {
         margin-top: 20px;
-        padding: 0 1rem; /* Padding reducido para móviles */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
     }
 
-    /* Ajustes en el header */
     .bg-header {
         padding: 3rem 1rem;
     }
 
     section {
-        padding: 1.5rem 0; /* Menos espacio vertical */
+        padding: 1.5rem 1rem;
+        overflow-x: hidden;
     }
 
-    /* Los links dentro de los badges se hacen más compactos */
     .badge {
         font-size: 0.9rem;
         padding: 0.4em 0.8em;
     }
 
-    /* Asegurar que el header no esté demasiado grande */
     header {
         padding: 3rem 1rem;
     }
 
     .text-center {
-        text-align: left; /* Para que la información no quede centrada en móviles */
+        text-align: left;
     }
 }
 
 /* Mobile - Landscape */
 @media (min-width: 576px) and (max-width: 768px) {
     h1 {
-        font-size: 2.6rem; /* Título ligeramente más pequeño en tabletas */
+        font-size: 2.6rem;
     }
 
     h2.h5 {
-        font-size: 1.6rem; /* Subtítulos más pequeños */
+        font-size: 1.6rem;
     }
 
     p, li {
-        font-size: 1.05rem; /* Texto un poco más pequeño */
+        font-size: 1.05rem;
     }
 
     .profile-photo img {
-        width: 130px; /* Foto más pequeña en paisaje */
-        height: 130px; /* Foto más pequeña en paisaje */
+        width: 130px;
+        height: 130px;
     }
 
     section {
-        padding: 1.8rem 0; /* Ajuste de espacio */
+        padding: 1.8rem 1rem;
     }
 
     .container {
-        margin-top: 40px; /* Menos margen superior en móvil */
+        margin-top: 40px;
     }
 
     .bg-header {
@@ -238,56 +249,55 @@ section:hover {
 /* Tablet y escritorios más pequeños */
 @media (min-width: 768px) and (max-width: 1024px) {
     h1 {
-        font-size: 2.9rem; /* Título más grande en tabletas y escritorios pequeños */
+        font-size: 2.9rem;
     }
 
     h2.h5 {
-        font-size: 1.7rem; /* Subtítulos más grandes */
+        font-size: 1.7rem;
     }
 
     p, li {
-        font-size: 1.1rem; /* Texto más legible */
+        font-size: 1.1rem;
     }
 
-    /* Foto redonda ajustada */
     .profile-photo img {
         width: 140px;
         height: 140px;
     }
 
     section {
-        padding: 2rem; /* Espaciado adicional */
+        padding: 2rem 1.5rem;
     }
 
     .container {
-        margin-top: 50px; /* Ajuste de márgenes */
+        margin-top: 50px;
     }
 }
 
-/* Para escritorios grandes */
+/* Escritorios grandes */
 @media (min-width: 1024px) {
     h1 {
-        font-size: 3.5rem; /* Título más grande */
+        font-size: 3.5rem;
     }
 
     h2.h5 {
-        font-size: 1.8rem; /* Subtítulos con tamaño máximo */
+        font-size: 1.8rem;
     }
 
     p, li {
-        font-size: 1.15rem; /* Texto más grande */
+        font-size: 1.15rem;
     }
 
     .profile-photo img {
-        width: 150px; /* Foto más grande */
-        height: 150px; /* Foto más grande */
+        width: 150px;
+        height: 150px;
     }
 
     section {
-        padding: 3rem; /* Más espacio en secciones */
+        padding: 3rem 2rem;
     }
 
     .container {
-        margin-top: 60px; /* Ajuste de márgenes */
+        margin-top: 60px;
     }
 }

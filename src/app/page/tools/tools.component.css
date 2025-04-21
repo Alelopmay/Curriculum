@@ -100,3 +100,69 @@
     opacity: 1;
   }
 }
+/* Responsive para tablets y móviles */
+@media (max-width: 992px) {
+  #tools {
+    height: auto; /* Ajustar altura automática */
+    padding: 30px 15px;
+  }
+
+  .tool-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .tool-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .tools-list {
+    gap: 12px;
+  }
+
+  .tool-item {
+    width: 90px;
+    height: 90px;
+    padding: 8px;
+  }
+
+  .tool-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+  }
+
+  .tool-item span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para móviles pequeños (<= 600px) */
+@media (max-width: 600px) {
+  #tools h2 {
+    font-size: 1.8rem;
+  }
+
+  .tool-card {
+    padding: 12px;
+  }
+
+  .tool-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .tool-item {
+    width: 80px;
+    height: 80px;
+    padding: 6px;
+  }
+
+  .tool-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tool-item span {
+    font-size: 0.8rem;
+  }
+}
